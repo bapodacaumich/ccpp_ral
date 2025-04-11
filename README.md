@@ -98,7 +98,7 @@ Example outputs:
 
 2. Trajectory Minimum Angle of incidence per face (0 to pi radians).
 <p align="left">
-  <img src="docs/16m_global.png" width="500" alt="8m VGD, No $local$ constraint"/>
+  <img src="docs/16m_global_min_aoi.png" width="500" alt="8m VGD, No $local$ constraint"/>
 </p>
 
 3. Pareto fronts
