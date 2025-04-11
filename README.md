@@ -97,7 +97,7 @@ Example output includes:
 - Pareto fronts of coverage vs. energy usage
 
 <p align="center">
-  <img src="docs/example_trajectory.png" width="500" alt="Trajectory Example"/>
+  <img src="docs/8m_global.png" width="500" alt="8m VGD, No $local$ constraint"/>
 </p>
 
 ## 🧠 Citation
