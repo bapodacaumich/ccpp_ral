@@ -1,0 +1,14 @@
+.*
+!/.gitignore
+/build/**
+/build/*
+/build/
+/data/coverage_maps/**
+/data/coverage_maps/*
+/data/coverage_maps/
+/data/tsp/**
+/data/tsp/*
+/data/tsp/
+/visualization_python/__pycache__/**
+/visualization_python/__pycache__/*
+/visualization_python/__pycache__/

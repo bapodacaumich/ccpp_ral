@@ -1,0 +1,7 @@
+Method: Knot Oriented SLERP						
+Conditions						
+vgd	locality	knot weight	fuel weight	fuel cost	knot cost	coverage ratio
+4m	global	    0.01	    1	        62.32401849	67.65053305	0.989628375
+4m	local	    0.001	    0.1	        97.86328442	139.561352	0.986171126
+8m	global	    0.1	        100	        37.78852728	130.9291075	0.994814157
+8m	local	    0.001	    1	        58.83707862	234.5640117	0.987035453
