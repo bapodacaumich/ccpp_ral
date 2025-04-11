@@ -87,21 +87,21 @@ set(SOURCES
 # add_executable(test_raytracing ${SOURCES} ${CMAKE_SOURCE_DIR}/examples/test_raytracing.cpp ${HEADER_FILES_HPP})
 
 # save models as obj files
-# add_executable(obj_converter ${SOURCES} ${CMAKE_SOURCE_DIR}/examples/obj_converter.cpp ${HEADER_FILES_HPP})
-# add_executable(run_ccpp ${SOURCES} ${CMAKE_SOURCE_DIR}/src/run_ccpp.cpp ${HEADER_FILES_HPP})
-# add_executable(get_coverage ${SOURCES} ${CMAKE_SOURCE_DIR}/examples/evaluate_path_coverage.cpp ${HEADER_FILES_HPP})
-# add_executable(cw_coverage ${SOURCES} ${CMAKE_SOURCE_DIR}/examples/evaluate_cw_coverage.cpp ${HEADER_FILES_HPP})
-# add_executable(saturation ${SOURCES} ${CMAKE_SOURCE_DIR}/examples/evaluate_path_saturation.cpp ${HEADER_FILES_HPP})
+add_executable(obj_converter ${SOURCES} ${CMAKE_SOURCE_DIR}/examples/obj_converter.cpp ${HEADER_FILES_HPP})
+add_executable(run_ccpp ${SOURCES} ${CMAKE_SOURCE_DIR}/src/run_ccpp.cpp ${HEADER_FILES_HPP})
+add_executable(get_coverage ${SOURCES} ${CMAKE_SOURCE_DIR}/examples/evaluate_path_coverage.cpp ${HEADER_FILES_HPP})
+add_executable(cw_coverage ${SOURCES} ${CMAKE_SOURCE_DIR}/examples/evaluate_cw_coverage.cpp ${HEADER_FILES_HPP})
+add_executable(saturation ${SOURCES} ${CMAKE_SOURCE_DIR}/examples/evaluate_path_saturation.cpp ${HEADER_FILES_HPP})
 add_executable(ordered_vp_cost_eval ${SOURCES} ${CMAKE_SOURCE_DIR}/examples/evaluate_ordered_vp_cost.cpp ${HEADER_FILES_HPP})
 
 # add_executable(test_path_collisions ${SOURCES} ${CMAKE_SOURCE_DIR}/src/test_path_collisions.cpp ${HEADER_FILES_HPP})
 
 #link cuda
-# target_link_libraries(obj_converter PRIVATE ${CUDA_CUDA_LIBRARY})
-# target_link_libraries(run_ccpp PRIVATE ${CUDA_CUDA_LIBRARY})
-# target_link_libraries(get_coverage PRIVATE ${CUDA_CUDA_LIBRARY})
-# target_link_libraries(cw_coverage PRIVATE ${CUDA_CUDA_LIBRARY})
-# target_link_libraries(saturation PRIVATE ${CUDA_CUDA_LIBRARY})
+target_link_libraries(obj_converter PRIVATE ${CUDA_CUDA_LIBRARY})
+target_link_libraries(run_ccpp PRIVATE ${CUDA_CUDA_LIBRARY})
+target_link_libraries(get_coverage PRIVATE ${CUDA_CUDA_LIBRARY})
+target_link_libraries(cw_coverage PRIVATE ${CUDA_CUDA_LIBRARY})
+target_link_libraries(saturation PRIVATE ${CUDA_CUDA_LIBRARY})
 target_link_libraries(ordered_vp_cost_eval PRIVATE ${CUDA_CUDA_LIBRARY})
 
 # target_link_libraries(test_raytracing PRIVATE ${CUDA_CUDA_LIBRARY})
