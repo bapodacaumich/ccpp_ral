@@ -75,7 +75,7 @@ The '/knot_ocp/' folder contains python code for trajectory optimization and par
 - *_U.csv: control actuation for each timestep
 - *_t.csv: timestamps of each discretized state
 
-2. package_path.py: processes solutions outputs from the optimal control formulation
+2. package_path.py: processes solutions outputs from the optimal control formulation. Here you may specify orientation assignment methods. We used Knot Oriented (SLERP) and Face Oriented (SLERP) methods.
 
 3. /build/get_coverage/: evaluates the coverage of each processed solution for Pareto tuning
 
@@ -85,7 +85,13 @@ The '/knot_ocp/' folder contains python code for trajectory optimization and par
 
 The '/visualization_python/' folder contains python code for solution visualization.
 
-Inspection quality evaluation can be performed by first evaluating a finely discretized trajectory using 
+First, move final 'packaged' paths to the '/visualization_python/final_paths/' folder.
+
+Then, Inspection quality evaluation can be performed by first evaluating a finely discretized trajectory using the get_coverage, cw_coverage, and saturation scripts in the /build/ folder.
+
+Finally, the python scripts in '/visualization_python/' use Plotly to generate 3d plots in a web-browser (using OpenGL).
+
+Examples of visualized solutions exist in the '/visualization_python/figures/' folder.
 
 ## 📊 Results
 
@@ -101,9 +107,9 @@ Example outputs:
   <img src="docs/16m_global_min_aoi.png" width="500" alt="8m VGD, No $local$ constraint"/>
 </p>
 
-3. Pareto fronts
+3. Pareto fronts of two metrics (of three total) plotted against eachother. We use Missed Coverage and Fuel Cost in our paper.
 <p align="left">
-    <img src="knot_ocp/pareto_front/face_oriented/pf_2m_local/2m_fc_local.png" width="500" alt="2m VGD, $local$ constraint."/>
+    <img src="docs/2m_fc_local.png" width="500" alt="2m VGD, $local$ constraint."/>
 </p>
 
 
