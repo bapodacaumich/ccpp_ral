@@ -89,16 +89,23 @@ Inspection quality evaluation can be performed by first evaluating a finely disc
 
 ## 📊 Results
 
-Example output includes:
+Example outputs:
 
-- Inspection coverage heatmaps
-- Trajectory plots in orbital frame
-- Fuel consumption statistics
-- Pareto fronts of coverage vs. energy usage
-
-<p align="center">
+1. Trajectory, ordered viewpoints, and convex station keepout region.
+<p align="left">
   <img src="docs/8m_global.png" width="500" alt="8m VGD, No $local$ constraint"/>
 </p>
+
+2. Trajectory Minimum Angle of incidence per face (0 to pi radians).
+<p align="left">
+  <img src="docs/16m_global.png" width="500" alt="8m VGD, No $local$ constraint"/>
+</p>
+
+3. Pareto fronts
+<p align="left">
+    <img src="knot_ocp/pareto_front/face_oriented/pf_2m_local/2m_fc_local.png" width="500" alt="2m VGD, $local$ constraint."/>
+</p>
+
 
 ## 🧠 Citation
 
