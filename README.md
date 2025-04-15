@@ -136,7 +136,7 @@ while $\exists a \in M s.t. \forall q \in \{VP\} cvg(q,a) = 0$:
 
 $\quad VP \leftarrow VP \cup \max(IG(q,VP) : q \in \{VP_{all} \setminus VP \})$
 
-  if $iteration$ == $0$:
+$\quad$ if $iteration$ == $0$:
 
 $\qquad$ for $q$ in $VP$:
 
