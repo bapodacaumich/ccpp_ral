@@ -114,7 +114,7 @@ Example outputs:
 
 ## Algorithm Pseudocode
 
-```{r, eval=FALSE}
+```{r}
 loop through each species
     loop through each measurement of the current species
     ...
