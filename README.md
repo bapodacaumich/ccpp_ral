@@ -120,8 +120,11 @@ Viewpoint Generation
 
 
 $\{VP_{all}\} \leftarrow \emptyset$
+
 $for face in mesh:$
+
   $ v &#8592; \textrm{extend viewpoint from }face\textrm{ centroid by }VGD $
+
   $ \{VP_{all}\} &#8592; \{VP_{all}\} \cup v $
 
 
