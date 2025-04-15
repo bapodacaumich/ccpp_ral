@@ -116,13 +116,33 @@ Example outputs:
 
 # Viewpoint Planning
 
-Viewpoint Generation
+**Viewpoint Generation**:
 
 $\{VP_{all}\} \leftarrow \emptyset$
-for $face$ in $mesh$:
-$\quad v \leftarrow$ extend viewpoint from $face$ centroid by $VGD$
-$\quad \{VP_{all}\} \leftarrow \{VP_{all}\} \cup v$
 
+for $face$ in $mesh$:
+
+$\quad q \leftarrow$ extend viewpoint from $face$ centroid by $VGD$
+
+$\quad \{VP_{all}\} \leftarrow \{VP_{all}\} \cup q$
+
+**Viewpoint Filtering**:
+
+$VP \leftarrow \emptyset$
+
+$iteration \leftarrow 0$
+
+while $\exists a \in M s.t. \forall q \in \{VP\} cvg(q,a) = 0$:
+
+$\quad VP \leftarrow VP \cup \max(IG(q,VP) : q \in \{VP_{all} \setminus VP \})$
+
+  if $iteration$ == $0$:
+
+    for $q$ in $VP$:
+
+      if $IG(q, \{VP \setminus q \}) == 0$:
+
+        $VP \leftarrow \{ VP \setminus q\}$
 
 ## 🧠 Citation
 
