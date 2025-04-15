@@ -138,11 +138,11 @@ $\quad VP \leftarrow VP \cup \max(IG(q,VP) : q \in \{VP_{all} \setminus VP \})$
 
   if $iteration$ == $0$:
 
-    for $q$ in $VP$:
+$\qquad$ for $q$ in $VP$:
 
-      if $IG(q, \{VP \setminus q \}) == 0$:
+$\qquad \quad$ if $IG(q, \{VP \setminus q \}) == 0$:
 
-        $VP \leftarrow \{ VP \setminus q\}$
+$\qquad \qquad VP \leftarrow \{ VP \setminus q\}$
 
 ## 🧠 Citation
 
