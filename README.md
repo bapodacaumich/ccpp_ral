@@ -126,6 +126,9 @@ $\quad q \leftarrow$ extend viewpoint from $face$ centroid by $VGD$
 
 $\quad \{VP_{all}\} \leftarrow \{VP_{all}\} \cup q$
 
+
+
+
 **Viewpoint Filtering**:
 
 $VP \leftarrow \emptyset$
