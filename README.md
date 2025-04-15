@@ -174,9 +174,9 @@ Order the viewpoints (global)
 
 > Greedily generate initial order $(VP)$
 >
-> $old_cost \leftarrow \infinity$ 
+> $old\_cost \leftarrow \infty$ 
 >
-> while $cost( (VP) ) < old_cost$:
+> while $cost( (VP) ) < old\_cost$:
 >
 > $\quad$ repeat for every 2-opt step:
 >
@@ -185,6 +185,8 @@ Order the viewpoints (global)
 > $\qquad$ if $cost( (VP)' ) > cost( (VP) ): continue
 >
 > $\qquad$ else: $(VP) \leftarrow (VP)'$
+>
+> $\quad old\_cost \leftarrow cost( (VP) )$
 
 Order the viewpoints (local)
 
@@ -201,6 +203,8 @@ Order the viewpoints (local)
 > $\qquad$ if $cost( (VP)' ) > cost( (VP) )$ or $local$ constraint doesn't hold: continue
 >
 > $\qquad$ else: $(VP) \leftarrow (VP)'$
+>
+> $\quad old\_cost \leftarrow cost( (VP) )$
 
 ## 🧠 Citation
 
