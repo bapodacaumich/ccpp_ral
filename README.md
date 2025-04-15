@@ -120,7 +120,7 @@ Example outputs:
 
 > $\{VP_{all}\} \leftarrow \emptyset$
 >
-> for $face$ in $mesh$:
+> for $face$ in $M$:
 >
 > $\quad q \leftarrow$ extend viewpoint from $face$ centroid by $VGD$
 >
@@ -132,15 +132,75 @@ Example outputs:
 > 
 > $iteration \leftarrow 0$
 > 
-> while $\exists a \in M s.t. \forall q \in \{VP\} cvg(q,a) = 0$:
+> while $\exists a \in M \; s.t. \; \forall q \in \{VP\} \; cvg(q,a) = 0$:
 > 
-> $\quad VP \leftarrow VP \cup \max(IG(q,VP) : q \in \{VP_{all} \setminus VP \})$
+> $\quad VP \leftarrow VP \cup \max( \; IG(q,VP) \; : q \in \{VP_{all} \setminus VP \})$
 > 
 > $\quad$ if $iteration$ == $0$:
 > 
 > $\qquad$ for $q$ in $VP$:
 > 
 > $\qquad \quad$ if $IG(q, \{VP \setminus q \}) == 0$ then $VP \leftarrow \{ VP \setminus q\}$
+
+**Cost Matrix Construction:**
+
+First find all collision free paths:
+
+> $VP \leftarrow VP \cup q_s$
+>
+> for $i$ in $|VP|$
+> 
+> $\quad$ for $j$ in $|VP|$
+>
+> $\qquad$ if $j \geq i$:
+>
+> $\qquad \quad x_{ij}, c_{ij} \leftarrow RRTZ(q_i, q_j)$ 
+>
+> $\qquad \quad x_{ji}, c_{ji} \leftarrow reverse(x_{ij})$
+
+Compute prior node dependent costs:
+
+> $C \leftarrow \emptyset$
+>
+> for $i$ in $|VP|$
+>
+> $\quad$ for $j$ in $|VP|$
+>
+> $\qquad$ for $k$ in $|VP|$
+>
+> $\qquad \quad C_{ijk} \leftarrow c_{jk} + c_{ijk}$
+
+Order the viewpoints (global)
+
+> Greedily generate initial order $(VP)$
+>
+> $old_cost \leftarrow \infinity$ 
+>
+> while $cost( (VP) ) < old_cost$:
+>
+> $\quad$ repeat for every 2-opt step:
+>
+> $\qquad (VP)' \leftarrow 2-opt( (VP) )$
+>
+> $\qquad$ if $cost( (VP)' ) > cost( (VP) ): continue
+>
+> $\qquad$ else: $(VP) \leftarrow (VP)'$
+
+Order the viewpoints (local)
+
+> Greedily generate initial order $(VP)$
+>
+> $old_cost \leftarrow \infinity$ 
+>
+> while $cost( (VP) ) < old_cost$:
+>
+> $\quad$ repeat for every 2-opt step:
+>
+> $\qquad (VP)' \leftarrow 2-opt( (VP) )$
+>
+> $\qquad$ if $cost( (VP)' ) > cost( (VP) )$ or $local$ constraint doesn't hold: continue
+>
+> $\qquad$ else: $(VP) \leftarrow (VP)'$
 
 ## 🧠 Citation
 
