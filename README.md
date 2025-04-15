@@ -112,6 +112,15 @@ Example outputs:
     <img src="docs/2m_fc_local.png" width="500" alt="2m VGD, $local$ constraint."/>
 </p>
 
+## Algorithm Pseudocode
+
+```{r, eval=FALSE}
+loop through each species
+    loop through each measurement of the current species
+    ...
+etc.
+```
+
 
 ## 🧠 Citation
 
