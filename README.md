@@ -121,7 +121,7 @@ Viewpoint Generation
 
 $\{VP_{all}\} \leftarrow \emptyset$
 
-$for face in mesh:$
+for $face$ in $mesh$:
 
   $ v &#8592; \textrm{extend viewpoint from }face\textrm{ centroid by }VGD $
 
