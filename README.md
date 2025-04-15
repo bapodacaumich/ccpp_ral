@@ -190,9 +190,9 @@ Order the viewpoints (local)
 
 > Greedily generate initial order $(VP)$
 >
-> $old_cost \leftarrow \infinity$ 
+> $old\_cost \leftarrow \infty$ 
 >
-> while $cost( (VP) ) < old_cost$:
+> while $cost( (VP) ) < old\_cost$:
 >
 > $\quad$ repeat for every 2-opt step:
 >
