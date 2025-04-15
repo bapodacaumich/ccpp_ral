@@ -140,9 +140,7 @@ $\quad$ if $iteration$ == $0$:
 
 $\qquad$ for $q$ in $VP$:
 
-$\qquad \quad$ if $IG(q, \{VP \setminus q \}) == 0$:
-
-$\qquad \qquad VP \leftarrow \{ VP \setminus q\}$
+$\qquad \quad$ if $IG(q, \{VP \setminus q \}) == 0$ then $VP \leftarrow \{ VP \setminus q\}$
 
 ## 🧠 Citation
 
