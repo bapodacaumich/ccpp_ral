@@ -118,28 +118,13 @@ Example outputs:
 
 Viewpoint Generation
 
-```latex
-\begin{algorithm}
-$\{VP_{all}\} \leftarrow \emptyset$
-
-\for $face$ in $mesh$:
-
-  $v \leftarrow$ extend viewpoint from $face$ centroid by $VGD$
-
-  $\{VP_{all}\} \leftarrow \{VP_{all}\} \cup v$
-
-\endfor
-
-\end{algorithm}
-```
-
 $\{VP_{all}\} \leftarrow \emptyset$
 
 for $face$ in $mesh$:
 
-  $v \leftarrow$ extend viewpoint from $face$ centroid by $VGD$
+$\quad v \leftarrow$ extend viewpoint from $face$ centroid by $VGD$
 
-  $\{VP_{all}\} \leftarrow \{VP_{all}\} \cup v$
+$\quad \{VP_{all}\} \leftarrow \{VP_{all}\} \cup v$
 
 
 ## 🧠 Citation
