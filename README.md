@@ -114,11 +114,15 @@ Example outputs:
 
 ## Algorithm Pseudocode
 
-```{r}
-loop through each species
-    loop through each measurement of the current species
-    ...
-etc.
+# Viewpoint Planning
+
+Viewpoint Generation
+
+```
+$VP_all$
+for face in mesh:
+  v &#8592; extend viewpoint from centroid by VGD
+  $\{VP_{all}\}$ &#8592; $\{VP_{all}\}$ \cup v
 ```
 
 
