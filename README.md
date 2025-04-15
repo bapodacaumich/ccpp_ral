@@ -118,15 +118,13 @@ Example outputs:
 
 **Viewpoint Generation**:
 
-$\{VP_{all}\} \leftarrow \emptyset$
-
-for $face$ in $mesh$:
-
-$\quad q \leftarrow$ extend viewpoint from $face$ centroid by $VGD$
-
-$\quad \{VP_{all}\} \leftarrow \{VP_{all}\} \cup q$
-
-$\quad$
+> $\{VP_{all}\} \leftarrow \emptyset$
+>
+> for $face$ in $mesh$:
+>
+> $\quad q \leftarrow$ extend viewpoint from $face$ centroid by $VGD$
+>
+> $\quad \{VP_{all}\} \leftarrow \{VP_{all}\} \cup q$
 
 **Viewpoint Filtering:**
 
