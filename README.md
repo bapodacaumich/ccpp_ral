@@ -208,14 +208,14 @@ Order the viewpoints (local)
 
 ## 🧠 Citation
 
-If you use this code or build upon this work, please cite: (WIP)
+If you use this code or build upon this work, please cite:
 
 ```
-@inproceedings{yourCitation2025,
+@inproceedings{apodaca_in-orbit_2025,
   title={In-Orbit Space Structure Inspection Trajectory Generation},
   author={Brandon Apodaca, Thor Helgeson, Ella Atkins, Leia Stirling},
   year={2025},
-  booktitle={...}
+  booktitle={RA-L}
 }
 ```
 
