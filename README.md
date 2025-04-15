@@ -123,9 +123,9 @@ $\{VP_{all}\} \leftarrow \emptyset$
 
 for $face$ in $mesh$:
 
-    $v \leftarrow$ extend viewpoint from $face$ centroid by $VGD$
+$v \leftarrow$ extend viewpoint from $face$ centroid by $VGD$
 
-  $ \{VP_{all}\} &#8592; \{VP_{all}\} \cup v $
+$ \{VP_{all}\} \leftarrow \{VP_{all}\} \cup v $
 
 
 ## 🧠 Citation
