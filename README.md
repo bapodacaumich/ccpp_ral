@@ -128,21 +128,21 @@ $\quad \{VP_{all}\} \leftarrow \{VP_{all}\} \cup q$
 
 $\quad$
 
-> Viewpoint Filtering:
+**Viewpoint Filtering:**
 
-$VP \leftarrow \emptyset$
-
-$iteration \leftarrow 0$
-
-while $\exists a \in M s.t. \forall q \in \{VP\} cvg(q,a) = 0$:
-
-$\quad VP \leftarrow VP \cup \max(IG(q,VP) : q \in \{VP_{all} \setminus VP \})$
-
-$\quad$ if $iteration$ == $0$:
-
-$\qquad$ for $q$ in $VP$:
-
-$\qquad \quad$ if $IG(q, \{VP \setminus q \}) == 0$ then $VP \leftarrow \{ VP \setminus q\}$
+> $VP \leftarrow \emptyset$
+> 
+> $iteration \leftarrow 0$
+> 
+> while $\exists a \in M s.t. \forall q \in \{VP\} cvg(q,a) = 0$:
+> 
+> $\quad VP \leftarrow VP \cup \max(IG(q,VP) : q \in \{VP_{all} \setminus VP \})$
+> 
+> $\quad$ if $iteration$ == $0$:
+> 
+> $\qquad$ for $q$ in $VP$:
+> 
+> $\qquad \quad$ if $IG(q, \{VP \setminus q \}) == 0$ then $VP \leftarrow \{ VP \setminus q\}$
 
 ## 🧠 Citation
 
