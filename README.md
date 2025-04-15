@@ -174,9 +174,9 @@ Order the viewpoints (global)
 
 > Greedily generate initial order $(VP)$
 >
-> $old\_cost \leftarrow \infty$ 
+> $old \textunderscore cost \leftarrow \infty$ 
 >
-> while $cost( (VP) ) < old\_cost$:
+> while $cost( (VP) ) < old \textunderscore cost$:
 >
 > $\quad$ repeat for every 2-opt step:
 >
@@ -186,15 +186,15 @@ Order the viewpoints (global)
 >
 > $\qquad$ else: $(VP) \leftarrow (VP)'$
 >
-> $\quad old\_cost \leftarrow cost( (VP) )$
+> $\quad old \textunderscore cost \leftarrow cost( (VP) )$
 
 Order the viewpoints (local)
 
 > Greedily generate initial order $(VP)$
 >
-> $old\_cost \leftarrow \infty$ 
+> $old \textunderscore cost \leftarrow \infty$ 
 >
-> while $cost( (VP) ) < old\_cost$:
+> while $cost( (VP) ) < old \textunderscore cost$:
 >
 > $\quad$ repeat for every 2-opt step:
 >
@@ -204,7 +204,7 @@ Order the viewpoints (local)
 >
 > $\qquad$ else: $(VP) \leftarrow (VP)'$
 >
-> $\quad old\_cost \leftarrow cost( (VP) )$
+> $\quad old \textunderscore cost \leftarrow cost( (VP) )$
 
 ## 🧠 Citation
 
