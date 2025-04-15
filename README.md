@@ -182,7 +182,7 @@ Order the viewpoints (global)
 >
 > $\qquad (VP)' \leftarrow 2-opt( (VP) )$
 >
-> $\qquad$ if $cost( (VP)' ) > cost( (VP) ): continue
+> $\qquad$ if $cost( (VP)' ) > cost( (VP) )$: continue
 >
 > $\qquad$ else: $(VP) \leftarrow (VP)'$
 >
