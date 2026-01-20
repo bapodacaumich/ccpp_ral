@@ -1,4 +1,4 @@
-/* inspection study analysis
+/* space station inspection planning using optimal control problem
 Copyright (C) 2026 Brandon Apodaca
 
 This program is free software: you can redistribute it and/or modify
